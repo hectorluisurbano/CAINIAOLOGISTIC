@@ -326,7 +326,7 @@ html, body {
   box-shadow: 0 15px 35px rgba(221, 95, 63, 0.5);
 }
 
-/* Iconos animados - COLORES SÓLIDOS CORPORATIVOS */
+/* Iconos animados */
 .icon-float {
   animation: floatOnce 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
@@ -384,18 +384,7 @@ html, body {
   background: #FFFFFF;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-
-/* Iconos sólidos - sin transparencia */
-.icon-solid-yale { color: #09366D !important; opacity: 1 !important; }
-.icon-solid-mikado { color: #FFC531 !important; opacity: 1 !important; }
-.icon-solid-cinnabar { color: #DD5F3F !important; opacity: 1 !important; }
-.bg-solid-yale { background: #09366D !important; opacity: 1 !important; }
-.bg-solid-mikado { background: #FFC531 !important; opacity: 1 !important; }
-.bg-solid-cinnabar { background: #DD5F3F !important; opacity: 1 !important; }
 </style>
   <style>body { box-sizing: border-box; }</style>
   <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
@@ -511,7 +500,7 @@ html, body {
         ======================================== -->
    <a href="https://wa.me/18098783328?text=Hola%2C%20me%20interesa%20importar%20desde%20China" target="_blank" rel="noopener noreferrer" class="whatsapp-float" title="Contáctanos por WhatsApp" aria-label="Contactar por WhatsApp">
     <span>Charlar con nuestro equipo</span>
-    <i data-lucide="message-circle" class="w-8 h-8 icon-solid-mikado"></i>
+    <i data-lucide="message-circle" class="w-8 h-8"></i>
    </a>
    
    <!-- ========================================
@@ -520,17 +509,16 @@ html, body {
    <header id="main-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 section-yale" role="banner">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
      <div class="flex items-center justify-between h-16 md:h-20">
-      <!-- Logo con recuadro blanco e icono corporativo -->
+      <!-- Logo con recuadro blanco -->
       <div class="flex items-center gap-2">
-       <div class="logo-container w-10 h-10 rounded-lg flex-shrink-0 anim-bounce" aria-label="Logo Cainiao Logistic DR">
-         <!-- REEMPLAZAR CON TU LOGO REAL: <img src="logo.png" alt="Cainiao Logistic" class="w-8 h-8"> -->
-         <i data-lucide="package" class="w-6 h-6 icon-solid-yale"></i>
+       <div class="logo-container w-10 h-10 rounded-lg flex items-center justify-center font-montserrat text-yale text-lg anim-bounce flex-shrink-0" aria-label="Logo Cainiao Logistic DR">
+        <span class="font-bold">C</span>
        </div>
        <div>
         <div class="font-montserrat text-white text-sm md:text-base leading-tight">
          Cainiao Logistic
         </div>
-        <div class="text-xs font-medium text-mikado">
+        <div class="text-xs font-medium" style="color: #FFC531;">
          República Dominicana
         </div>
        </div>
@@ -548,7 +536,7 @@ html, body {
       
       <!-- Mobile toggle -->
       <button id="menu-toggle" class="md:hidden text-white p-2" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
-       <i data-lucide="menu" class="w-6 h-6 icon-solid-mikado"></i>
+       <i data-lucide="menu" class="w-6 h-6"></i>
       </button>
      </div>
      
@@ -577,9 +565,760 @@ html, body {
      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="max-w-3xl">
        <div class="anim-fade inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold mb-6 anim-glow" style="background: rgba(255,197,49,0.2); color: #FFC531;">
-        <i data-lucide="globe" class="w-3.5 h-3.5 icon-pulse icon-solid-mikado" aria-hidden="true"></i> Logística Internacional China → RD
+        <i data-lucide="globe" class="w-3.5 h-3.5 icon-pulse" aria-hidden="true"></i> Logística Internacional China → RD
        </div>
        <h1 id="hero-title" class="font-montserrat text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight anim-fade-d1" style="text-shadow: 3px 3px 6px rgba(0,0,0,0.5); color: #FFC531;">Importa desde China sin Riesgos ni Complicaciones</h1>
        <p id="hero-subtitle" class="text-yale font-semibold text-base md:text-lg mt-5 max-w-xl anim-fade-d2">Trae tus productos de forma segura, rápida y rentable hacia República Dominicana, sin complicaciones ni riesgos innecesarios.</p>
        <div class="flex flex-col sm:flex-row gap-3 mt-8 anim-fade-d3">
-        <a href="https://tally.so/r/WOP1Aa" target="_blank" rel="noopener noreferrer" id="hero-cta" class="px-7 py-3.5 rounded-lg font-bold text
+        <a href="https://tally.so/r/WOP1Aa" target="_blank" rel="noopener noreferrer" id="hero-cta" class="px-7 py-3.5 rounded-lg font-bold text-base text-yale text-center transition-all hover:brightness-110 hover:scale-105 btn-cta" style="background: #FFC531;">
+         Cotiza Gratis
+        </a>
+        <a href="#proceso" class="px-7 py-3.5 rounded-lg font-semibold text-base text-yale text-center transition-all hover:scale-105" style="background: #FFC531;" id="btn-como-funciona">
+         ¿Cómo Funciona?
+        </a>
+       </div>
+       <div class="flex items-center gap-6 mt-10 anim-fade-d4">
+        <div class="flex items-center gap-2 text-sm text-white font-medium">
+         <i data-lucide="shield-check" class="w-4 h-4 icon-pulse" aria-hidden="true"></i> Carga asegurada
+        </div>
+        <div class="flex items-center gap-2 text-sm text-white font-medium">
+         <i data-lucide="truck" class="w-4 h-4 icon-float" aria-hidden="true"></i> Envío marítimo y aéreo
+        </div>
+       </div>
+      </div>
+     </div>
+     
+     <!-- Hero SVG decoration -->
+     <div class="absolute right-0 top-1/2 -translate-y-1/2 hidden lg:block anim-truck" style="opacity:0.35;" aria-hidden="true">
+      <svg width="450" height="350" viewBox="0 0 100 100">
+       <rect x="5" y="40" width="60" height="40" rx="3" fill="#FFC531" />
+       <rect x="65" y="55" width="25" height="25" rx="2" fill="#DD5F3F" />
+       <circle cx="20" cy="85" r="7" fill="#09366D" />
+       <circle cx="50" cy="85" r="7" fill="#09366D" />
+       <circle cx="78" cy="85" r="7" fill="#09366D" />
+       <rect x="10" y="45" width="20" height="15" rx="1" fill="rgba(255,255,255,0.4)" />
+       <rect x="35" y="45" width="20" height="15" rx="1" fill="rgba(255,255,255,0.4)" />
+      </svg>
+     </div>
+    </section>
+    
+    <!-- PROBLEMA -->
+    <section id="problema" class="scroll-section w-full py-16 md:py-24 section-yale" aria-labelledby="problema-title">
+     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+       <span class="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3 anim-pulse" style="background: rgba(221,95,63,0.3); color: #DD5F3F;">El Problema</span>
+       <h2 id="problema-title" class="font-montserrat text-2xl md:text-4xl" style="color: #FFC531;">¿Te Identificas con Esto?</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+       <div class="bg-white/10 rounded-xl p-6 border border-white/20 shadow-sm hover:border-DD5F3F transition-all duration-400">
+        <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4 icon-float" style="background: rgba(221,95,63,0.5);" aria-hidden="true">
+         <i data-lucide="alert-triangle" class="w-6 h-6" style="color: #FFC531; opacity: 1;"></i>
+        </div>
+        <h3 class="font-heading font-bold text-base mb-2" style="color: #FFC531;">Proveedores que desaparecen</h3>
+        <p class="text-white/90 text-sm leading-relaxed">Después del pago no vuelves a saber de ellos.</p>
+       </div>
+       <div class="bg-white/10 rounded-xl p-6 border border-white/20 shadow-sm hover:border-DD5F3F transition-all duration-400">
+        <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4 icon-float" style="background: rgba(221,95,63,0.5); animation-delay: 0.2s;" aria-hidden="true">
+         <i data-lucide="package-x" class="w-6 h-6" style="color: #FFC531; opacity: 1;"></i>
+        </div>
+        <h3 class="font-heading font-bold text-base mb-2" style="color: #FFC531;">Mercancía retenida</h3>
+        <p class="text-white/90 text-sm leading-relaxed">Problemas y trabas constantes en las aduanas.</p>
+       </div>
+       <div class="bg-white/10 rounded-xl p-6 border border-white/20 shadow-sm hover:border-DD5F3F transition-all duration-400">
+        <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4 icon-float" style="background: rgba(221,95,63,0.5); animation-delay: 0.4s;" aria-hidden="true">
+         <i data-lucide="help-circle" class="w-6 h-6" style="color: #FFC531; opacity: 1;"></i>
+        </div>
+        <h3 class="font-heading font-bold text-base mb-2" style="color: #FFC531;">Costos ocultos</h3>
+        <p class="text-white/90 text-sm leading-relaxed">Gastos imprevistos que destruyen tu ganancia.</p>
+       </div>
+       <div class="bg-white/10 rounded-xl p-6 border border-white/20 shadow-sm hover:border-DD5F3F transition-all duration-400">
+        <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4 icon-float" style="background: rgba(221,95,63,0.5); animation-delay: 0.6s;" aria-hidden="true">
+         <i data-lucide="clock" class="w-6 h-6" style="color: #FFC531; opacity: 1;"></i>
+        </div>
+        <h3 class="font-heading font-bold text-base mb-2" style="color: #FFC531;">Retrasos constantes</h3>
+        <p class="text-white/90 text-sm leading-relaxed">Tiempos de espera que afectan gravemente tu negocio.</p>
+       </div>
+      </div>
+     </div>
+    </section>
+    
+    <!-- SOLUCIÓN / SERVICIOS -->
+    <section id="servicios" class="scroll-section w-full py-16 md:py-24 section-white" aria-labelledby="servicios-title">
+     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+       <span class="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3 anim-pulse" style="background: rgba(255,197,49,0.2); color: #FFC531;">La Solución</span>
+       <h2 id="servicios-title" class="font-montserrat text-2xl md:text-4xl text-yale">Nuestros Servicios</h2>
+       <p class="text-gray-600 mt-3 max-w-lg mx-auto text-sm">Todo lo que necesitas para importar desde China con confianza y eficiencia.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+       <div class="service-card bg-white rounded-xl p-6 border-2 border-gray-100 text-center">
+        <div class="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-4 icon-float" style="background: #09366D;" aria-hidden="true">
+         <i data-lucide="search-check" class="w-6 h-6" style="color: #FFC531;"></i>
+        </div>
+        <h3 class="font-heading font-bold text-base mb-2 text-yale">Validación de proveedores</h3>
+        <p class="text-gray-600 text-sm">Verificamos que tus proveedores en China sean confiables.</p>
+       </div>
+       <div class="service-card bg-white rounded-xl p-6 border-2 border-gray-100 text-center">
+        <div class="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-4 icon-float" style="background: #09366D; animation-delay: 0.2s;" aria-hidden="true">
+         <i data-lucide="truck" class="w-6 h-6" style="color: #FFC531;"></i>
+        </div>
+        <h3 class="font-heading font-bold text-base mb-2 text-yale">Coordinación logística</h3>
+        <p class="text-gray-600 text-sm">Gestionamos el envío desde China hasta República Dominicana.</p>
+       </div>
+       <div class="service-card bg-white rounded-xl p-6 border-2 border-gray-100 text-center">
+        <div class="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-4 icon-float" style="background: #09366D; animation-delay: 0.4s;" aria-hidden="true">
+         <i data-lucide="file-check" class="w-6 h-6" style="color: #FFC531;"></i>
+        </div>
+        <h3 class="font-heading font-bold text-base mb-2 text-yale">Gestión aduanal</h3>
+        <p class="text-gray-600 text-sm">Trámites sin complicaciones.</p>
+       </div>
+       <div class="service-card bg-white rounded-xl p-6 border-2 border-gray-100 text-center">
+        <div class="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-4 icon-float" style="background: #09366D; animation-delay: 0.6s;" aria-hidden="true">
+         <i data-lucide="map-pin" class="w-6 h-6" style="color: #FFC531;"></i>
+        </div>
+        <h3 class="font-heading font-bold text-base mb-2 text-yale">Seguimiento constante</h3>
+        <p class="text-gray-600 text-sm">Siempre sabes dónde está tu carga.</p>
+       </div>
+      </div>
+     </div>
+    </section>
+    
+    <!-- IMAGEN EMPOTRADA 1 - Almacén -->
+    <section class="w-full py-8 section-white">
+     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <img src="https://lh3.googleusercontent.com/d/1POnn92iJdORrp3oa7JMV4uCBdbrH3CLj" 
+           alt="Almacén de logística internacional de Cainiao Logistic DR" 
+           class="img-embed w-full h-64 md:h-96 object-cover shadow-2xl rounded-2xl"
+           loading="lazy">
+     </div>
+    </section>
+    
+    <!-- CÓMO FUNCIONA -->
+    <section id="proceso" class="scroll-section w-full py-16 md:py-24 section-yale-light" aria-labelledby="proceso-title">
+     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+       <span class="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3 anim-pulse" style="background: rgba(255,197,49,0.2); color: #FFC531;">Proceso Simple</span>
+       <h2 id="proceso-title" class="font-montserrat text-2xl md:text-4xl text-white">CÓMO FUNCIONA</h2>
+       <p class="text-white/80 mt-3 max-w-md mx-auto text-sm">3 pasos simples para importar sin riesgos</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 relative">
+       <div class="step-connector text-center relative z-10">
+        <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-5 font-heading font-extrabold text-2xl anim-bounce" style="background: #FFC531; color: #09366D;" aria-hidden="true">
+         1
+        </div>
+        <h3 class="font-heading font-bold text-lg text-white mb-2 uppercase">SOLICITAS TU COTIZACIÓN</h3>
+        <p class="text-white/90 text-sm max-w-xs mx-auto">Completa el formulario con los detalles de tu carga.</p>
+       </div>
+       <div class="step-connector text-center relative z-10">
+        <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-5 font-heading font-extrabold text-2xl anim-bounce" style="background: #FFC531; color: #09366D; animation-delay: 0.2s;" aria-hidden="true">
+         2
+        </div>
+        <h3 class="font-heading font-bold text-lg text-white mb-2 uppercase">COORDINAMOS TODO</h3>
+        <p class="text-white/90 text-sm max-w-xs mx-auto">Nos encargamos de proveedores, envío y documentación.</p>
+       </div>
+       <div class="text-center relative z-10">
+        <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-5 font-heading font-extrabold text-2xl anim-bounce" style="background: #FFC531; color: #09366D; animation-delay: 0.4s;" aria-hidden="true">
+         3
+        </div>
+        <h3 class="font-heading font-bold text-lg text-white mb-2 uppercase">RECIBES EN RD</h3>
+        <p class="text-white/90 text-sm max-w-xs mx-auto">Sin estrés, sin errores y con control total.</p>
+       </div>
+      </div>
+     </div>
+    </section>
+    
+    <!-- IMAGEN EMPOTRADA 2 - Transporte -->
+    <section class="w-full py-8 section-yale-light">
+     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <img src="https://lh3.googleusercontent.com/d/1Np1Mo9Rg5bi4qKKyLHFL-fSVP0qLDYG9" 
+           alt="Transporte internacional de carga desde China hacia República Dominicana" 
+           class="img-embed w-full h-64 md:h-96 object-cover shadow-2xl rounded-2xl"
+           loading="lazy">
+     </div>
+    </section>
+    
+    <!-- BENEFICIOS -->
+    <section id="beneficios" class="scroll-section w-full py-16 md:py-24 section-white" aria-labelledby="beneficios-title">
+     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+       <span class="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3 anim-pulse" style="background: rgba(9,54,109,0.1); color: #09366D;">¿Por Qué Elegirnos?</span>
+       <h2 id="beneficios-title" class="font-montserrat text-2xl md:text-4xl text-yale">Beneficios Exclusivos</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+       <div class="flex gap-4 p-5 rounded-xl border border-gray-100 hover:shadow-lg transition-all duration-400 hover:border-FFC531">
+        <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 icon-float" style="background: #09366D;" aria-hidden="true">
+         <i data-lucide="shield" class="w-5 h-5" style="color: #FFC531;"></i>
+        </div>
+        <div>
+         <h3 class="font-heading font-bold text-sm mb-1 text-yale">Carga 100% Asegurada</h3>
+         <p class="text-gray-700 text-xs leading-relaxed font-medium">Tu inversión está protegida desde China hasta tu almacén.</p>
+        </div>
+       </div>
+       <div class="flex gap-4 p-5 rounded-xl border border-gray-100 hover:shadow-lg transition-all duration-400 hover:border-FFC531">
+        <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 icon-float" style="background: #09366D; animation-delay: 0.2s;" aria-hidden="true">
+         <i data-lucide="map-pin" class="w-5 h-5" style="color: #FFC531;"></i>
+        </div>
+        <div>
+         <h3 class="font-heading font-bold text-sm mb-1 text-yale">Tracking en Todo el Proceso</h3>
+         <p class="text-gray-700 text-xs leading-relaxed font-medium">Monitorea tu envío desde que sale de China hasta que llega.</p>
+        </div>
+       </div>
+       <div class="flex gap-4 p-5 rounded-xl border border-gray-100 hover:shadow-lg transition-all duration-400 hover:border-FFC531">
+        <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 icon-float" style="background: #09366D; animation-delay: 0.4s;" aria-hidden="true">
+         <i data-lucide="users" class="w-5 h-5" style="color: #FFC531;"></i>
+        </div>
+        <div>
+         <h3 class="font-heading font-bold text-sm mb-1 text-yale">Asesoría Personalizada</h3>
+         <p class="text-gray-700 text-xs leading-relaxed font-medium">Nuestro equipo dedicado te guía en cada paso del proceso.</p>
+        </div>
+       </div>
+       <div class="flex gap-4 p-5 rounded-xl border border-gray-100 hover:shadow-lg transition-all duration-400 hover:border-FFC531">
+        <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 icon-float" style="background: #09366D; animation-delay: 0.6s;" aria-hidden="true">
+         <i data-lucide="dollar-sign" class="w-5 h-5" style="color: #FFC531;"></i>
+        </div>
+        <div>
+         <h3 class="font-heading font-bold text-sm mb-1 text-yale">Precios Competitivos</h3>
+         <p class="text-gray-700 text-xs leading-relaxed font-medium">Tarifas transparentes sin cargos ocultos ni sorpresas.</p>
+        </div>
+       </div>
+       <div class="flex gap-4 p-5 rounded-xl border border-gray-100 hover:shadow-lg transition-all duration-400 hover:border-FFC531">
+        <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 icon-float" style="background: #09366D; animation-delay: 0.8s;" aria-hidden="true">
+         <i data-lucide="package" class="w-5 h-5" style="color: #FFC531;"></i>
+        </div>
+        <div>
+         <h3 class="font-heading font-bold text-sm mb-1 text-yale">Consolidación de Carga</h3>
+         <p class="text-gray-700 text-xs leading-relaxed font-medium">Unimos tus compras de varios proveedores en un solo envío.</p>
+        </div>
+       </div>
+       <div class="flex gap-4 p-5 rounded-xl border border-gray-100 hover:shadow-lg transition-all duration-400 hover:border-FFC531">
+        <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 icon-float" style="background: #09366D; animation-delay: 1s;" aria-hidden="true">
+         <i data-lucide="zap" class="w-5 h-5" style="color: #FFC531;"></i>
+        </div>
+        <div>
+         <h3 class="font-heading font-bold text-sm mb-1 text-yale">Despacho Express</h3>
+         <p class="text-gray-700 text-xs leading-relaxed font-medium">Gestión aduanal rápida para que recibas sin demoras.</p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+    
+    <!-- TIPOS DE CARGA -->
+    <section class="scroll-section w-full py-16 md:py-24 section-light" aria-labelledby="tipos-carga-title">
+     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+       <span class="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3 anim-pulse" style="background: rgba(221,95,63,0.2); color: #DD5F3F;">Especialidades</span>
+       <h2 id="tipos-carga-title" class="font-montserrat text-2xl md:text-4xl text-yale">Tipos de Carga que Manejamos</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+       <div class="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-400 hover:border-DD5F3F">
+        <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 icon-float" style="background: #09366D;" aria-hidden="true">
+         <i data-lucide="boxes" class="w-7 h-7" style="color: #FFC531;"></i>
+        </div>
+        <h3 class="font-heading font-bold text-lg mb-2 text-yale">Carga Marítima</h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">Productos variados: electrónicos, Ferretería, accesorios, artículos para el hogar y más.</p>
+        <ul class="space-y-2">
+         <li class="flex items-center gap-2 text-xs text-gray-700 font-medium"><i data-lucide="check" class="w-3.5 h-3.5" style="color: #DD5F3F;" aria-hidden="true"></i> Sin mínimo de compra</li>
+         <li class="flex items-center gap-2 text-xs text-gray-700 font-medium"><i data-lucide="check" class="w-3.5 h-3.5" style="color: #DD5F3F;" aria-hidden="true"></i> Múltiples categorías</li>
+         <li class="flex items-center gap-2 text-xs text-gray-700 font-medium"><i data-lucide="check" class="w-3.5 h-3.5" style="color: #DD5F3F;" aria-hidden="true"></i> Inspección incluida</li>
+        </ul>
+       </div>
+       <div class="bg-white rounded-2xl p-7 border-2 shadow-sm hover:shadow-2xl transition-all duration-400 relative overflow-hidden" style="border-color: #FFC531;">
+        <div class="absolute top-3 right-3 px-2.5 py-1 rounded-full text-xs font-bold anim-pulse" style="background: #FFC531; color: #09366D;">
+         Popular
+        </div>
+        <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 icon-float" style="background: #DD5F3F;" aria-hidden="true">
+         <i data-lucide="shopping-cart" class="w-7 h-7 text-white"></i>
+        </div>
+        <h3 class="font-heading font-bold text-lg mb-2 text-yale">Emprendimiento</h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">Ideal para tiendas online. Importa tus productos de Alibaba, 1688, Taobao y más.</p>
+        <ul class="space-y-2">
+         <li class="flex items-center gap-2 text-xs text-gray-700 font-medium"><i data-lucide="check" class="w-3.5 h-3.5" style="color: #DD5F3F;" aria-hidden="true"></i> Etiquetado personalizado</li>
+         <li class="flex items-center gap-2 text-xs text-gray-700 font-medium"><i data-lucide="check" class="w-3.5 h-3.5" style="color: #DD5F3F;" aria-hidden="true"></i> Fotos de verificación</li>
+         <li class="flex items-center gap-2 text-xs text-gray-700 font-medium"><i data-lucide="check" class="w-3.5 h-3.5" style="color: #DD5F3F;" aria-hidden="true"></i> Envío directo a almacén</li>
+        </ul>
+       </div>
+       <div class="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-400 hover:border-DD5F3F">
+        <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 icon-float" style="background: #09366D;" aria-hidden="true">
+         <i data-lucide="combine" class="w-7 h-7" style="color: #FFC531;"></i>
+        </div>
+        <h3 class="font-heading font-bold text-lg mb-2 text-yale">Carga Consolidada</h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">Agrupa pedidos de diferentes proveedores en un solo contenedor y ahorra.</p>
+        <ul class="space-y-2">
+         <li class="flex items-center gap-2 text-xs text-gray-700 font-medium"><i data-lucide="check" class="w-3.5 h-3.5" style="color: #DD5F3F;" aria-hidden="true"></i> Ahorro en flete</li>
+         <li class="flex items-center gap-2 text-xs text-gray-700 font-medium"><i data-lucide="check" class="w-3.5 h-3.5" style="color: #DD5F3F;" aria-hidden="true"></i> Almacén en China</li>
+         <li class="flex items-center gap-2 text-xs text-gray-700 font-medium"><i data-lucide="check" class="w-3.5 h-3.5" style="color: #DD5F3F;" aria-hidden="true"></i> Envío mensual</li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </section>
+    
+    <!-- TESTIMONIOS -->
+    <section id="testimonios" class="scroll-section w-full py-16 md:py-24 section-white" aria-labelledby="testimonios-title">
+     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+       <span class="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3 anim-pulse" style="background: rgba(255,197,49,0.2); color: #FFC531;">Testimonios</span>
+       <h2 id="testimonios-title" class="font-montserrat text-2xl md:text-4xl text-yale">Lo que Dicen Nuestros Clientes</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+       <div class="testimonial-card p-5 rounded-xl border border-gray-100 shadow-sm">
+        <div class="flex items-center gap-1 mb-3" aria-label="Calificación 5 estrellas">
+         <span style="color: #FFC531;" itemprop="reviewRating">★★★★★</span>
+        </div>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4" itemprop="reviewBody">"Trabajar con Cainiao Logistic DR ha sido un alivio para nuestra empresa. Su conocimiento en comercio internacional y aduanas es incomparable."</p>
+        <div class="flex items-center gap-3">
+         <img src="https://lh3.googleusercontent.com/d/18QZHlBkiC04yi9aoMKuxpAYx6stX821t" alt="Adrián Villalona" class="w-10 h-10 rounded-full object-cover shadow-sm" itemprop="image">
+         <div>
+          <div class="text-sm font-semibold text-yale" itemprop="name">Adrián Villalona</div>
+          <div class="text-xs text-gray-500">Ferretería Incgo, SD</div>
+         </div>
+        </div>
+       </div>
+       <div class="testimonial-card p-5 rounded-xl border border-gray-100 shadow-sm">
+        <div class="flex items-center gap-1 mb-3" aria-label="Calificación 5 estrellas">
+         <span style="color: #FFC531;" itemprop="reviewRating">★★★★★</span>
+        </div>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4" itemprop="reviewBody">"Cainiao Logistic DR ha transformado nuestra experiencia con el comercio internacional. ¡Recomendamos sus servicios sin dudar!"</p>
+        <div class="flex items-center gap-3">
+         <img src="https://lh3.googleusercontent.com/d/1pWh3ISSOJm9GN32avJ1OUfgp4yHvFH2d" alt="Andrea Lama" class="w-10 h-10 rounded-full object-cover shadow-sm" itemprop="image">
+         <div>
+          <div class="text-sm font-semibold text-yale" itemprop="name">Andrea Lama</div>
+          <div class="text-xs text-gray-500">Lama Import, Santiago</div>
+         </div>
+        </div>
+       </div>
+       <div class="testimonial-card p-5 rounded-xl border border-gray-100 shadow-sm">
+        <div class="flex items-center gap-1 mb-3" aria-label="Calificación 5 estrellas">
+         <span style="color: #FFC531;" itemprop="reviewRating">★★★★★</span>
+        </div>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4" itemprop="reviewBody">"El control de calidad me da tranquilidad. Recibo fotos antes del envío y todo llega como esperaba."</p>
+        <div class="flex items-center gap-3">
+         <img src="https://lh3.googleusercontent.com/d/1A3Ut3zaEZH-kUi4citkob7ntQTN22oXi" alt="Isabella Montás" class="w-10 h-10 rounded-full object-cover shadow-sm" itemprop="image">
+         <div>
+          <div class="text-sm font-semibold text-yale" itemprop="name">Isabella Montás</div>
+          <div class="text-xs text-gray-500">Emprendedor, SD</div>
+         </div>
+        </div>
+       </div>
+       <div class="testimonial-card p-5 rounded-xl border border-gray-100 shadow-sm">
+        <div class="flex items-center gap-1 mb-3" aria-label="Calificación 5 estrellas">
+         <span style="color: #FFC531;" itemprop="reviewRating">★★★★★</span>
+        </div>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4" itemprop="reviewBody">"Profesionales de verdad. El despacho aduanal fue rápido y sin complicaciones."</p>
+        <div class="flex items-center gap-3">
+         <img src="https://lh3.googleusercontent.com/d/1YpUjyYGhn69Yaw61wFC_OhwfVixtoO4F" alt="Ricardo Henríquez" class="w-10 h-10 rounded-full object-cover shadow-sm" itemprop="image">
+         <div>
+          <div class="text-sm font-semibold text-yale" itemprop="name">Ricardo Henríquez</div>
+          <div class="text-xs text-gray-500">Emprendedor, La Vega</div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+    
+    <!-- FAQ -->
+    <section id="faq" class="scroll-section w-full py-16 md:py-24 section-light" aria-labelledby="faq-title">
+     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+       <span class="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3 anim-pulse" style="background: rgba(9,54,109,0.1); color: #09366D;">FAQ</span>
+       <h2 id="faq-title" class="font-montserrat text-2xl md:text-4xl text-yale">Preguntas Frecuentes</h2>
+      </div>
+      <div class="space-y-3" id="faq-container">
+       <div class="faq-item bg-white rounded-xl border border-gray-100 overflow-hidden">
+        <button class="faq-toggle w-full flex items-center justify-between p-5 text-left" onclick="toggleFaq(this)" aria-expanded="false">
+         <span class="font-heading font-bold text-sm pr-4 text-yale" itemprop="name">¿Qué servicios de aduanas ofrece Cainiao Logistic DR?</span>
+         <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 flex-shrink-0" style="color: #DD5F3F;" aria-hidden="true"></i>
+        </button>
+        <div class="faq-answer px-5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+         <p class="text-gray-600 text-sm leading-relaxed pb-5" itemprop="text">Cainiao Logistic DR ofrece gestión de documentación aduanera, despacho y asesoramiento en regulaciones internacionales para facilitar el comercio.</p>
+        </div>
+       </div>
+       <div class="faq-item bg-white rounded-xl border border-gray-100 overflow-hidden">
+        <button class="faq-toggle w-full flex items-center justify-between p-5 text-left" onclick="toggleFaq(this)" aria-expanded="false">
+         <span class="font-heading font-bold text-sm pr-4 text-yale" itemprop="name">¿Cómo puede Cainiao Logistic DR ayudar en el comercio internacional?</span>
+         <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 flex-shrink-0" style="color: #DD5F3F;" aria-hidden="true"></i>
+        </button>
+        <div class="faq-answer px-5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+         <p class="text-gray-600 text-sm leading-relaxed pb-5" itemprop="text">Proporcionamos soluciones personalizadas para el transporte y la logística, asegurando el cumplimiento de normativas internacionales en comercio exterior.</p>
+        </div>
+       </div>
+       <div class="faq-item bg-white rounded-xl border border-gray-100 overflow-hidden">
+        <button class="faq-toggle w-full flex items-center justify-between p-5 text-left" onclick="toggleFaq(this)" aria-expanded="false">
+         <span class="font-heading font-bold text-sm pr-4 text-yale" itemprop="name">¿Cainiao Logistic DR ofrece asesoría en regulaciones comerciales?</span>
+         <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 flex-shrink-0" style="color: #DD5F3F;" aria-hidden="true"></i>
+        </button>
+        <div class="faq-answer px-5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+         <p class="text-gray-600 text-sm leading-relaxed pb-5" itemprop="text">Sí, ofrecemos asesoramiento detallado sobre leyes y regulaciones internacionales para garantizar el cumplimiento en todas las operaciones comerciales.</p>
+        </div>
+       </div>
+       <div class="faq-item bg-white rounded-xl border border-gray-100 overflow-hidden">
+        <button class="faq-toggle w-full flex items-center justify-between p-5 text-left" onclick="toggleFaq(this)" aria-expanded="false">
+         <span class="font-heading font-bold text-sm pr-4 text-yale" itemprop="name">¿Dónde se encuentra ubicada Cainiao Logistic DR?</span>
+         <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 flex-shrink-0" style="color: #DD5F3F;" aria-hidden="true"></i>
+        </button>
+        <div class="faq-answer px-5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+         <p class="text-gray-600 text-sm leading-relaxed pb-5" itemprop="text">Cainiao Logistic DR está situada en Torre Vergel II, Piso 6, Av. Winston Churchill, Piantini, Santo Domingo, brindando servicios personalizados a empresas locales e internacionales desde esta ubicación estratégica.</p>
+        </div>
+       </div>
+       <div class="faq-item bg-white rounded-xl border border-gray-100 overflow-hidden">
+        <button class="faq-toggle w-full flex items-center justify-between p-5 text-left" onclick="toggleFaq(this)" aria-expanded="false">
+         <span class="font-heading font-bold text-sm pr-4 text-yale" itemprop="name">¿Es necesario registrarse para utilizar los servicios de Cainiao Logistic DR?</span>
+         <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 flex-shrink-0" style="color: #DD5F3F;" aria-hidden="true"></i>
+        </button>
+        <div class="faq-answer px-5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+         <p class="text-gray-600 text-sm leading-relaxed pb-5" itemprop="text">No es necesario registrarse, pero recomendamos contactarnos directamente para discutir sus necesidades específicas y obtener una consulta personalizada.</p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+    
+    <!-- CONTACTO -->
+    <section id="contacto" class="scroll-section w-full py-16 md:py-24 section-cinnabar" aria-labelledby="contacto-title">
+     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+       <span class="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3 anim-pulse" style="background: rgba(255,255,255,0.3); color: #FFFFFF;">Contáctanos</span>
+       <h2 id="contacto-title" class="font-montserrat text-2xl md:text-4xl text-white">¿Listo para Importar?</h2>
+       <p class="text-white/90 mt-3 max-w-md mx-auto text-sm">Escríbenos y recibe una cotización personalizada en menos de 24 horas.</p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+       <!-- Tally Form CTA -->
+       <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-2xl flex flex-col items-center text-center justify-center space-y-6">
+         <div class="w-16 h-16 rounded-full flex items-center justify-center anim-bounce" style="background: rgba(255,255,255,0.2);">
+           <i data-lucide="file-text" class="w-8 h-8 text-white"></i>
+         </div>
+         <h3 class="font-montserrat text-xl md:text-2xl text-white">Solicitud de Cotización Detallada</h3>
+         <p class="text-white/90 text-sm max-w-sm">
+           Para darte la mejor propuesta, necesitamos algunos detalles de tu mercancía. Completa nuestro formulario oficial en Tally.
+         </p>
+         <a href="https://tally.so/r/WOP1Aa" target="_blank" rel="noopener noreferrer" class="w-full py-4 rounded-lg font-bold text-lg text-yale transition-all hover:brightness-110 hover:scale-105 shadow-lg flex items-center justify-center gap-2 btn-cta" style="background: #FFC531;">
+          Ir al Formulario <i data-lucide="external-link" class="w-5 h-5"></i>
+         </a>
+         <p class="text-xs text-white/70 italic">Respuesta garantizada en menos de 24 horas hábiles.</p>
+       </div>
+       <!-- Contact Info -->
+       <div class="space-y-5">
+        <a href="https://wa.me/18098783328" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-5 rounded-xl border border-white/20 hover:shadow-lg transition-all duration-400 hover:bg-white/10 group" aria-label="Contactar por WhatsApp">
+         <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 icon-pulse" style="background: rgba(37, 211, 102, 0.4);" aria-hidden="true">
+          <i data-lucide="message-circle" class="w-6 h-6" style="color: #25D366;"></i>
+         </div>
+         <div>
+          <div class="font-heading font-bold text-sm text-white">
+           WhatsApp
+          </div>
+          <div id="display-phone" class="text-white text-sm font-medium">
+           +1 809 878 3328
+          </div>
+         </div>
+         <i data-lucide="arrow-right" class="w-5 h-5 text-white ml-auto group-hover:translate-x-2 transition-transform" aria-hidden="true"></i>
+        </a>
+        <div class="flex items-center gap-4 p-5 rounded-xl border border-white/20">
+         <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 icon-float" style="background: rgba(221, 95, 63, 0.4);" aria-hidden="true">
+          <i data-lucide="mail" class="w-6 h-6" style="color: #DD5F3F;"></i>
+         </div>
+         <div>
+          <div class="font-heading font-bold text-sm text-white">
+           Email
+          </div>
+          <div id="display-email" class="text-white text-sm font-medium">
+           cainiaord@gmail.com
+          </div>
+         </div>
+        </div>
+        <div class="flex items-center gap-4 p-5 rounded-xl border border-white/20">
+         <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 icon-float" style="background: rgba(255, 197, 49, 0.4);" aria-hidden="true">
+          <i data-lucide="map-pin" class="w-6 h-6" style="color: #FFC531;"></i>
+         </div>
+         <div>
+          <div class="font-heading font-bold text-sm text-white">
+           Ubicación
+          </div>
+          <div class="text-white text-sm font-medium">
+           Torre Vergel II, Piso 6, Av. Winston Churchill, DN, Santo Domingo República Dominicana
+          </div>
+         </div>
+        </div>
+        <!-- IMAGEN OFICINA -->
+        <div class="mt-4 rounded-xl overflow-hidden border border-white/20 shadow-lg">
+          <img src="https://lh3.googleusercontent.com/d/1wG5Hh3T_bI5qMxnR7F_Jtdj3EYPa2MOu" alt="Oficinas de Cainiao Logistic DR en Santo Domingo" class="w-full h-40 object-cover hover:scale-105 transition-transform duration-400">
+        </div>
+        <div class="flex items-center gap-4 p-5 rounded-xl border border-white/20">
+         <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 icon-float" style="background: rgba(255, 197, 49, 0.4);" aria-hidden="true">
+          <i data-lucide="clock" class="w-6 h-6" style="color: #FFC531;"></i>
+         </div>
+         <div>
+          <div class="font-heading font-bold text-sm text-white">
+           Horario
+          </div>
+          <div class="text-white text-sm font-medium">
+           Lunes a Viernes: 9:00 AM - 6:00 PM
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+    
+    <!-- CTA BANNER -->
+    <section class="w-full py-14 section-yale" aria-labelledby="cta-title">
+     <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 id="cta-title" class="font-montserrat text-2xl md:text-3xl text-white mb-3">¿Listo para hacer crecer tu negocio?</h2>
+      <p class="text-white/80 text-sm mb-7 max-w-md mx-auto">Únete a cientos de emprendedores dominicanos que ya importan desde China con confianza.</p>
+      <a href="https://tally.so/r/WOP1Aa" target="_blank" rel="noopener noreferrer" class="inline-block px-8 py-3.5 rounded-lg font-bold text-base transition-all hover:brightness-110 hover:scale-105 btn-cta" style="background: #FFC531; color: #09366D;">
+       Empieza Ahora →
+      </a>
+     </div>
+    </section>
+   
+   </main>
+   
+   <!-- FOOTER -->
+   <footer class="w-full py-12 section-yale" role="contentinfo">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+      <div class="flex flex-col gap-4">
+       <div class="flex items-center gap-2">
+        <div class="logo-container w-10 h-10 rounded-lg flex items-center justify-center font-montserrat text-lg anim-pulse flex-shrink-0">
+         <span class="font-bold text-yale">C</span>
+        </div>
+        <span class="font-montserrat text-white text-lg">Cainiao Logistic DR</span>
+       </div>
+       <p class="text-white/80 text-sm leading-relaxed max-w-xs">
+        Expertos en logística internacional y compras en China. Tu socio estratégico para importar a República Dominicana.
+       </p>
+      </div>
+      <div>
+       <h4 class="font-montserrat text-white text-sm mb-4 uppercase tracking-wider">Enlaces Rápidos</h4>
+       <ul class="flex flex-col gap-2">
+        <li><a href="#servicios" class="text-white/80 hover:text-white text-sm transition-colors">Servicios</a></li>
+        <li><a href="#proceso" class="text-white/80 hover:text-white text-sm transition-colors">¿Cómo Funciona?</a></li>
+        <li><a href="#beneficios" class="text-white/80 hover:text-white text-sm transition-colors">Beneficios</a></li>
+        <li><a href="#faq" class="text-white/80 hover:text-white text-sm transition-colors">FAQ</a></li>
+        <li><a href="#contacto" class="text-white/80 hover:text-white text-sm transition-colors">Contacto</a></li>
+       </ul>
+      </div>
+      <div>
+       <h4 class="font-montserrat text-white text-sm mb-4 uppercase tracking-wider">Redes Sociales</h4>
+       <div class="flex items-center gap-3">
+        <a href="https://www.instagram.com/elclubdelimportador.rd" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg flex items-center justify-center text-white/70 hover:text-white transition-colors hover:scale-110" style="background: rgba(255,255,255,0.1);" aria-label="Instagram">
+         <i data-lucide="instagram" class="w-5 h-5"></i>
+        </a>
+        <a href="https://www.facebook.com/groups/cainiaoshipping" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg flex items-center justify-center text-white/70 hover:text-white transition-colors hover:scale-110" style="background: rgba(255,255,255,0.1);" aria-label="Facebook">
+         <i data-lucide="facebook" class="w-5 h-5"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/UC9tUUF28a0KhWi3-lZnhO-Q" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg flex items-center justify-center text-white/70 hover:text-white transition-colors hover:scale-110" style="background: rgba(255,255,255,0.1);" aria-label="YouTube">
+         <i data-lucide="youtube" class="w-5 h-5"></i>
+        </a>
+       </div>
+      </div>
+     </div>
+     <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="text-white/60 text-xs">
+       © <span id="current-year">2026</span> Cainiao Logistic DR. Todos los derechos reservados.
+      </div>
+      <div class="text-white/60 text-xs">
+       Torre Vergel II, Piso 6, Piantini, Santo Domingo, República Dominicana.
+      </div>
+     </div>
+    </div>
+   </footer>
+  </div>
+  
+  <!-- ========================================
+       JAVASCRIPT
+       ======================================== -->
+  <script>
+// Default config
+const defaultConfig = {
+  hero_title: 'Importa desde China sin Riesgos ni Complicaciones',
+  hero_subtitle: 'Trae tus productos de forma segura, rápida y rentable hacia República Dominicana, sin complicaciones ni riesgos innecesarios.',
+  cta_text: 'Cotiza Gratis',
+  phone_number: '+1 809 878 3328',
+  email_address: 'cainiaord@gmail.com',
+  background_color: '#09366D',
+  surface_color: '#FFFFFF',
+  text_color: '#09366D',
+  primary_action_color: '#FFC531',
+  secondary_action_color: '#DD5F3F',
+  font_family: 'Montserrat',
+  font_size: 16
+};
+
+function applyConfig(config) {
+  const el = (id) => document.getElementById(id);
+  const c = (key) => config[key] || defaultConfig[key];
+
+  // Text content
+  if (el('hero-title')) el('hero-title').textContent = c('hero_title');
+  if (el('hero-subtitle')) el('hero-subtitle').textContent = c('hero_subtitle');
+  
+  const ctaText = c('cta_text');
+  if (el('hero-cta')) el('hero-cta').textContent = ctaText;
+  if (el('nav-cta')) el('nav-cta').textContent = ctaText;
+
+  if (el('display-phone')) el('display-phone').textContent = c('phone_number');
+  if (el('display-email')) el('display-email').textContent = c('email_address');
+
+  // Font
+  const customFont = c('font_family');
+  const stack = `${customFont}, DM Sans, sans-serif`;
+  document.querySelectorAll('.font-heading').forEach(h => h.style.fontFamily = stack);
+
+  // Font size
+  const base = c('font_size');
+  if (el('hero-title')) el('hero-title').style.fontSize = '';
+  document.querySelectorAll('p').forEach(p => p.style.fontSize = `${base}px`);
+}
+
+// Element SDK init
+if (window.elementSdk) {
+  window.elementSdk.init({
+    defaultConfig,
+    onConfigChange: async (config) => applyConfig(config),
+    mapToCapabilities: (config) => {
+      const c = (key) => config[key] || defaultConfig[key];
+      const mut = (key) => ({
+        get: () => c(key),
+        set: (v) => { config[key] = v; window.elementSdk.setConfig({ [key]: v }); }
+      });
+      return {
+        recolorables: [
+          mut('background_color'),
+          mut('surface_color'),
+          mut('text_color'),
+          mut('primary_action_color'),
+          mut('secondary_action_color')
+        ],
+        borderables: [],
+        fontEditable: mut('font_family'),
+        fontSizeable: mut('font_size')
+      };
+    },
+    mapToEditPanelValues: (config) => {
+      const c = (key) => config[key] || defaultConfig[key];
+      return new Map([
+        ['hero_title', c('hero_title')],
+        ['hero_subtitle', c('hero_subtitle')],
+        ['cta_text', c('cta_text')],
+        ['phone_number', c('phone_number')],
+        ['email_address', c('email_address')]
+      ]);
+    }
+  });
+}
+
+// FAQ accordion
+function toggleFaq(btn) {
+  const answer = btn.nextElementSibling;
+  const chevron = btn.querySelector('.faq-chevron');
+  const isOpen = answer.classList.contains('open');
+  
+  // Close all
+  document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+  document.querySelectorAll('.faq-chevron').forEach(c => c.classList.remove('open'));
+  document.querySelectorAll('.faq-toggle').forEach(t => t.setAttribute('aria-expanded', 'false'));
+  
+  if (!isOpen) {
+    answer.classList.add('open');
+    chevron.classList.add('open');
+    btn.setAttribute('aria-expanded', 'true');
+  }
+}
+
+// Mobile menu
+document.getElementById('menu-toggle').addEventListener('click', () => {
+  const menu = document.getElementById('mobile-menu');
+  const isOpen = menu.classList.toggle('open');
+  document.getElementById('menu-toggle').setAttribute('aria-expanded', isOpen);
+});
+
+// Close mobile menu on link click
+document.querySelectorAll('.mobile-nav-link').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.remove('open');
+    document.getElementById('menu-toggle').setAttribute('aria-expanded', 'false');
+  });
+});
+
+// Scroll reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.scroll-section').forEach(s => observer.observe(s));
+
+// Header scroll effect
+let lastScroll = 0;
+document.getElementById('app-wrapper').addEventListener('scroll', function() {
+  const header = document.getElementById('main-header');
+  const scroll = this.scrollTop;
+  if (scroll > 50) {
+    header.style.boxShadow = '0 4px 30px rgba(9, 54, 109, 0.3)';
+    header.style.background = '#09366D';
+  } else {
+    header.style.boxShadow = 'none';
+    header.style.background = '#09366D';
+  }
+  lastScroll = scroll;
+});
+
+// Current year
+document.getElementById('current-year').textContent = new Date().getFullYear();
+
+// Init Lucide
+lucide.createIcons();
+
+// ========================================
+// SCROLL SUAVE PARA LINKS INTERNOS - FORZADO
+// ========================================
+function smoothScrollTo(targetId) {
+  const target = document.querySelector(targetId);
+  if (target) {
+    const headerOffset = 80;
+    const elementPosition = target.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
+    return true;
+  }
+  return false;
+}
+
+// Attach scroll to all internal anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    const href = this.getAttribute('href');
+    // Solo si es un link interno (no Tally ni WhatsApp)
+    if (href.startsWith('#') && href.length > 1) {
+      e.preventDefault();
+      smoothScrollTo(href);
+    }
+  });
+});
+
+// Also ensure button "¿Cómo Funciona?" works
+const btnComoFunciona = document.getElementById('btn-como-funciona');
+if (btnComoFunciona) {
+  btnComoFunciona.addEventListener('click', (e) => {
+    e.preventDefault();
+    smoothScrollTo('#proceso');
+  });
+}
+
+// Re-initialize icons after any dynamic content changes
+document.addEventListener('DOMContentLoaded', () => {
+  lucide.createIcons();
+});
+</script>
+ </body>
+</html>
